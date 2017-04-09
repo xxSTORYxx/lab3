@@ -2,6 +2,12 @@
 
 Part A：
 
+How to compile：
+
+LAB3: lab3.cpp
+
+	g++ LAB3 lab3.cpp
+
 Part B：
 
 Result：
