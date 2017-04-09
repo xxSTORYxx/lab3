@@ -1,23 +1,29 @@
 #include <iostream>
 #include <iomanip>
 #include <vector>
+#include <algorithm>
+#include <fstream>
+#include <cstddef>
+
 using namespace std;
 int main (){
 	const size_t vecSiz = 9;
-	unsigned int total;
-	vector < unsigned int, vecSiz > cow;
+	size_t i, j;
+	int total = 0;
+	vector < unsigned int > cow(vecSiz);
+
 	ifstream inFile( "file.in", ios::in );
 	if( !inFile ){
 		cerr << "failed" << endl;
 		exit(1);
 	}
-	file.in >> cow[0] >> endl;
-	for ( size_t i = 1; i < vecSiz; ++i ){
-		file.in >> cow[i] >> endl;
+	inFile >> cow.at(0);
+	for ( i = 1; i < vecSiz; ++i ){
+		inFile >> cow.at(i);
 	}
-	sort(cow.begin(), cow.end());
-	for ( size_t j = 1; j < 6; ++j ){
-		total += cow[j];
+	sort ( cow.begin(), cow.end() );
+	for ( j = 4; j < vecSiz; ++j ){
+		total += cow.at(j);
 	}
 	cout << total << endl;	
 	return 0;
