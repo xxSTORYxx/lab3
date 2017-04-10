@@ -33,5 +33,8 @@ Explanation：
 
 The sort function is a C++ built-in function which can sort the number from large to small.
 It uses a segmentation method to calculate multiple partitions at the same time which makes the calculation more efficient.
-Similarly,the inse
+
+Similarly,the insertion_sort is also a sorting algorithm.However,its operation is much slower than the sort function since the insertion_sort uses the insert sorting method that repeatly calculates multiple times.
+
+From the 
 
