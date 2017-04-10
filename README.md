@@ -36,5 +36,6 @@ It uses a segmentation method to calculate multiple partitions at the same time 
 
 Similarly,the insertion_sort is also a sorting algorithm.However,its operation is much slower than the sort function since the insertion_sort uses the insert sorting method that repeatly calculates multiple times.
 
-From the 
+From the time complexity formula of algorithm,we know that the sort function takes O(n log n) and the insertion_sort takes O(n
+^2).
 
