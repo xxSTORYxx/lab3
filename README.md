@@ -31,3 +31,7 @@ Result：
 
 Explanation：
 
+The sort function is a C++ built-in function which can sort the number from large to small.
+It uses a segmentation method to calculate multiple partitions at the same time which makes the calculation more efficient.
+Similarly,the inse
+
