@@ -34,8 +34,11 @@ Explanation：
 The sort function is a C++ built-in function which can sort the number from large to small.
 It uses a segmentation method to calculate multiple partitions at the same time which makes the calculation more efficient.
 
-Similarly,the insertion_sort is also a sorting algorithm.However,its operation is much slower than the sort function since the insertion_sort uses the insert sorting method that repeatly calculates multiple times.
+Similarly,the insertion_sort function is also a sorting algorithm.However,its operation is much slower than the sort function since the insertion_sort function uses the insert sorting method that repeatly calculates multiple times.
 
-From the time complexity formula of algorithm,we know that the sort function takes O(n log n) and the insertion_sort takes O(n
+From the time complexity formula of algorithm,we know that the sort function takes O(n log n) and the insertion_sort function takes O(n
 ^2).
 
+For the sort function,we can predict that when the number of entries entered is 1000,10000,100000,1000000,the ratio of time they took is 3:40:500:6000,which is just in line with the test results.
+
+For the insertion_sort function,on the other sides,we can predict that when the number of entries entered is 1000,10000,100000,1000000,the ratio of time they took is 1:100:10000:1000000,which is just in line with the test results.
